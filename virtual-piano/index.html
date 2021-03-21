@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF -8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/piano.ico" rel="shortcut icon" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>virtual-piano</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header-title">Virtual Piano</h1>
+    </header>
+    <main class="main">
+      <div class="btn-container">
+        <button class="btn btn-notes btn-active">Notes</button>
+        <button class="btn btn-letters">Letters</button>
+      </div>
+      <div class="piano" id="piano">
+        <div class="piano-key" data-letter="D" data-note="c" id="keyc">
+          <audio id="c" src="assets/audio/C.wav"></audio>
+        </div>
+        <div class="piano-key" data-letter="F" data-note="d" id="keyd">
+          <audio id="d" src="assets/audio/D.wav"></audio>
+        </div>
+        <div class="piano-key" data-letter="G" data-note="e" id="keye">
+          <audio id="e" src="assets/audio/E.wav"></audio>
+        </div>
+        <div class="piano-key" data-letter="H" data-note="f" id="keyf">
+          <audio id="f" src="assets/audio/F.wav"></audio>
+        </div>
+        <div class="piano-key" data-letter="J" data-note="g" id="keyg">
+          <audio id="g" src="assets/audio/G.wav"></audio>
+        </div>
+        <div class="piano-key" data-letter="K" data-note="a" id="keya">
+          <audio id="a" src="assets/audio/A.wav"></audio>
+        </div>
+        <div class="piano-key" data-letter="L" data-note="b" id="keyb">
+          <audio id="b" src="assets/audio/B.wav"></audio>
+        </div>
+        <div class="keys-sharp">
+          <div
+            class="piano-key sharp"
+            data-letter="R"
+            data-note="Cs"
+            id="keyCs"
+          >
+            <audio id="Cs" src="assets/audio/Cs.wav"></audio>
+          </div>
+          <div
+            class="piano-key sharp"
+            data-letter="T"
+            data-note="Ds"
+            id="keyDs"
+          >
+            <audio id="Ds" src="assets/audio/Ds.wav"></audio>
+          </div>
+          <div class="piano-key sharp none"></div>
+          <div
+            class="piano-key sharp"
+            data-letter="U"
+            data-note="Fs"
+            id="keyFs"
+          >
+            <audio id="Fs" src="assets/audio/Fs.wav"></audio>
+          </div>
+          <div
+            class="piano-key sharp"
+            data-letter="I"
+            data-note="Gs"
+            id="keyGs"
+          >
+            <audio id="Gs" src="assets/audio/Gs.wav"></audio>
+          </div>
+          <div
+            class="piano-key sharp"
+            data-letter="O"
+            data-note="As"
+            id="keyAs"
+          >
+            <audio id="As" src="assets/audio/As.wav"></audio>
+          </div>
+        </div>
+      </div>
+      <button class="fullscreen openfullscreen"></button>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <a class="github" href="#" target="_blank" rel="noopener noreferrer"
+          >github</a
+        >
+        <a
+          class="rss"
+          href="https://rs.school/js/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="rss-year">'21</span>
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
